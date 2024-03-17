@@ -1,0 +1,2 @@
+# Aqr
+Adofai Quality Rating
