@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--傻逼水嫩嫩，还得我后端来给你改前端-->
+<head>
+    <title>AQR Mods Downloader</title>
+    <link rel="icon" href="../../static/AQR-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../static/wssb.css">
+    <style>
+        body {
+            background-image: url('../../static/BK.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h2 {
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        li {
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        li p {
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        .main-title {
+            font-size: x-large;
+            margin-top: -0.3%;
+        }
+
+        .button {
+            width: 55px;
+            padding: 10px 20px;
+            margin-left: 3%;
+            margin-top: 0.1%;
+            border: none;
+            background-color: rgba(255, 255, 255, .1);
+            color: white;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .button a {
+            color: rgba(255, 255, 255);
+            text-decoration: none;
+            font-size: x-large;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+
+<h1> AQR Mods Downloader</h1>
+
+<h2>{{ mod.Name }}</h2>
+<li>
+    <p>版本: v{{ mod.Version }}</p>
+
+    <p>更新日志: {{ mod.Description | safe }}</p>
+
+    <div class="button" href="{{ mod.DownloadURL }}">
+        <a target="_blank" href="{{ mod.DownloadURL }}">下载</a>
+    </div>
+
+
+</li>
+</body>
+
+</html>

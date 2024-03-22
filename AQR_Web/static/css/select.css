@@ -1,0 +1,37 @@
+select {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: large;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+select:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+select,
+option {
+    border-radius: 10px;
+}
+
+option {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    line-height: 20px;
+}
+
+select:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,51 @@
+body {
+    background-image: url('../images/BK.jpg');
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+
+.filtrate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.358);
+    text-align: left;
+    margin: 5%;
+    color: white;
+    flex-direction: row;
+    margin-top: auto;
+    border: 5px;
+}
+
+.drop-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fi-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width:1141px) {
+    .drop-down {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:790px) {
+    .fi-button {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:550px) {
+    nav {
+        flex-direction: column;
+    }
+}

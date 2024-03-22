@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adofai Mods</title>
+    <link rel="icon" href="static/AQR-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="static/wssb.css">
+    <link rel="stylesheet" type="text/css" href="static/nav.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" target="_blank" class="title-herf">
+            AQR Mods Downloader</a>
+
+        <div class="nav-link">
+            <a href="https://adofaiaqr.top/">关卡</a>
+            <a href="https://www.kdocs.cn/l/cqjnLaNTfZdC" target="_blank">排位</a>
+            <li class="dropdown">
+                <p class="dropdown-text" target="blank">上传</p>
+                <ul class="dropdown-content">
+                    <li><a href="https://docs.qq.com/form/page/DZEpoc1RkUmVjbmt4" target="_blank">谱面上传</a></li>
+                    <li><a href="https://docs.qq.com/form/page/DZG9RV3FDdVhwRE9l" target="_blank">排位上传</a></li>
+                </ul>
+            </li>
+        </div>
+
+        <div class="a-mod">
+            <a href="index.html" target="_blank">搜索请用Ctrl+F</a>
+        </div>
+    </nav>
+
+
+
+
+    <style>
+        body {
+            background-image: url('static/BK.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h2 {
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .main-mod-button {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .mod-button {
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+        }
+
+        .mod-button p {
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        .main-title {
+            font-size: x-large;
+            margin-top: -0.3%;
+        }
+
+        .button {
+            width: 65px;
+            padding: 10px 20px;
+            margin-left: 3%;
+            margin-top: 0.1%;
+            border: none;
+            background-color: rgba(255, 255, 255, .1);
+            color: white;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .button a {
+            color: rgba(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s;
+        }
+
+        .button1 {
+            width: 65px;
+            padding: 10px 20px;
+            margin-left: 3%;
+            margin-top: 1%;
+            border: none;
+            background-color: rgba(255, 255, 255, .1);
+            color: white;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .button1 a {
+            color: rgba(255, 255, 255);
+            font-size: large;
+            text-decoration: none;
+            padding-left: 15%;
+        }
+    </style>
+
+    <ul class="main-mod-button">
+        {% for mod in mods %}
+        <li class="mod-button">
+            <div>
+                <p class="main-title">
+                    {{ mod.Name }} - v{{ mod.Version }}
+                </p>
+
+
+
+                <div class="button" href="./info/{{ mod.id }}">
+                    <a target="_blank" href=" ./info/{{ mod.id }}">模组详情</a>
+                </div>
+
+                <div class="button1">
+                    <a target="_blank" href="{{ mod.DownloadURL }}">下载</a>
+                </div>
+            </div>
+
+
+        </li>
+
+        {% endfor %}
+    </ul>
+
+
+
+
+    <div id="qq-kook-container"
+        style="align-items: center; background-color: rgba(0, 0, 0, 0.523) ; text-align: center; padding: 20px; color: white;">
+
+        <p><a href="https://kook.top/oTc1hc" style="text-Decoration:none; color:rgb(39, 197, 47)"
+                target="_blank">点击加入KOOK(模组页面)</a>&ensp;|&ensp;QQ：532536665</p>
+
+
+        <p>网站由<a href="https://space.bilibili.com/507559140"
+                style="text-decoration: none;color: rgb(241, 143, 246);">MCommander2077<a>、<a
+                        href="https://space.bilibili.com/1173527356?"
+                        style="text-Decoration:none; color:rgb(179, 223, 255)" target="_blank">水嫩嫩吗</a>制作 &ensp; |
+                    &ensp; <a href="https://space.bilibili.com/499696027"
+                        style="text-Decoration:none; color:rgb(255, 255, 255)" target="_blank">联系我们</a></p>
+
+        <p><a style="color:rgb(224, 79, 247)" href="https://afdian.net/a/adofaiaqr" target="_blank">赞助我们</a><span
+                style="font-size: 10px;">(请理性消费,您的支持是对我们最大的鼓励)</span></p>
+
+
+        <p>Version 1.0&ensp;最后一次更新于2024.2.25</p>
+        <a href="https://beian.miit.gov.cn/?spm=5176.28508143.J_9220772140.60.5421154avnXqY0"
+            style="color:rgba(255,255,255,.5);text-Decoration:none;">黑ICP备2023015444号-1</a>
+    </div>
+</body>
+
+</html>

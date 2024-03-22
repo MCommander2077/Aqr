@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>冰与火之舞质量评级</title>
+
+  <link rel="stylesheet" type="text/css" href="static/css/search.css">
+  <link rel="stylesheet" type="text/css" href="static/css/q-buttons.css">
+  <link rel="stylesheet" type="text/css" href="static/css/font.css">
+  <link rel="stylesheet" type="text/css" href="static/css/button.css">
+  <link rel="stylesheet" type="text/css" href="static/css/select.css">
+  <link rel="stylesheet" type="text/css" href="static/css/upper.css">
+  <link rel="stylesheet" type="text/css" href="static/css/nav.css">
+
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <link rel="icon" href="static/images/AQR-logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <a href="main-surface.html" target="_blank" class="title-herf">
+      <span style="color: rgb(0, 255, 255);">冰</span>与<span style="color: rgb(255, 0, 0);">火</span>之舞质量评级</a>
+
+    <div class="nav-link">
+      <a href="index.html">关卡</a>
+      <a href="https://www.kdocs.cn/l/cqjnLaNTfZdC" target="_blank">排位</a>
+      <li class="dropdown">
+        <p class="dropdown-text">上传</p>
+        <ul class="dropdown-content">
+          <li><a href="https://docs.qq.com/form/page/DZEpoc1RkUmVjbmt4" target="_blank">谱面上传</a></li>
+          <li><a href="https://docs.qq.com/form/page/DZG9RV3FDdVhwRE9l" target="_blank">排位上传</a></li>
+        </ul>
+      </li>
+    </div>
+
+    <div style="padding-left: 40%; height: 30px;" class="search">
+      <input type="text" id="search" placeholder="    搜索歌曲标题、曲师、谱师等" />
+    </div>
+  </nav>
+
+
+
+
+  <div class="filtrate">
+    <div class="drop-down">
+      <!-- 下拉框 a -->
+      <label for="selectA">级别范围：</label>
+      <div>
+        <select id="selectA" style="font-size: large">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <!-- 下拉框 b -->
+        <label for="selectB"> 到 </label>
+        <select id="selectB" style="font-size: large">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20" selected>20</option>
+        </select>
+      </div>
+      <!-- 难度下拉框 a -->
+      <label for="selectDifficultiesA"> &ensp; 难度范围：</label>
+      <div>
+        <select id="selectDifficultiesA" style="font-size: large">
+          <option value="-2">BYD</option>
+          <option value="0" selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="18.5">18+</option>
+          <option value="19">19</option>
+          <option value="19.5">19+</option>
+          <option value="20.0">20.0</option>
+          <option value="20.05">20.0+</option>
+          <option value="20.1">20.1</option>
+          <option value="20.15">20.1+</option>
+          <option value="20.2">20.2</option>
+          <option value="20.25">20.2+</option>
+          <option value="20.3">20.3</option>
+          <option value="20.35">20.3+</option>
+          <option value="20.4">20.4</option>
+          <option value="20.45">20.4+</option>
+          <option value="20.5">20.5</option>
+          <option value="20.55">20.5+</option>
+          <option value="20.6">20.6</option>
+          <option value="20.65">20.6+</option>
+          <option value="20.7">20.7</option>
+          <option value="20.75">20.7+</option>
+          <option value="20.8">20.8</option>
+          <option value="20.85">20.8+</option>
+          <option value="20.9">20.9</option>
+          <option value="20.95">20.9+</option>
+          <option value="21">21</option>
+          <option value="21.5">21+</option>
+          <option value="21.1">21.1</option>
+          <option value="21.15">21.1+</option>
+          <option value="21.2">21.2</option>
+          <option value="21.25">21.2+</option>
+          <option value="21.3">21.3</option>
+          <option value="30">-21</option>
+        </select>
+        <!-- 难度下拉框 b -->
+        <label for="selectDifficultiesB"> 到 </label>
+        <select id="selectDifficultiesB" style="font-size: large">
+          <option value="-2">BYD</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="18.5">18+</option>
+          <option value="19">19</option>
+          <option value="19.5">19+</option>
+          <option value="20.0">20.0</option>
+          <option value="20.05">20.0+</option>
+          <option value="20.1">20.1</option>
+          <option value="20.15">20.1+</option>
+          <option value="20.2">20.2</option>
+          <option value="20.25">20.2+</option>
+          <option value="20.3">20.3</option>
+          <option value="20.35">20.3+</option>
+          <option value="20.4">20.4</option>
+          <option value="20.45">20.4+</option>
+          <option value="20.5">20.5</option>
+          <option value="20.55">20.5+</option>
+          <option value="20.6">20.6</option>
+          <option value="20.65">20.6+</option>
+          <option value="20.7">20.7</option>
+          <option value="20.75">20.7+</option>
+          <option value="20.8">20.8</option>
+          <option value="20.85">20.8+</option>
+          <option value="20.9">20.9</option>
+          <option value="20.95">20.9+</option>
+          <option value="21">21</option>
+          <option value="21.5">21+</option>
+          <option value="21.1">21.1</option>
+          <option value="21.15">21.1+</option>
+          <option value="21.2">21.2</option>
+          <option value="21.25">21.2+</option>
+          <option value="21.3">21.3</option>
+          <option value="30" selected>-21</option>
+        </select>
+      </div>
+    </div>
+    <div class="fi-button">
+      <button id="defaultSort" class="button">默认排序</button>
+      <div>
+        <button id="sortByLevelAscBtn" class="button">等级升序</button>
+        <button id="sortByLevelDescBtn" class="button">等级降序</button>
+      </div>
+      <div>
+        <button id="sortByDifficultiesAscBtn" class="button">难度升序</button>
+        <button id="sortByDifficultiesDescBtn" class="button">难度降序</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="noResultsMessage"
+    style="text-align: center; margin-top: 20px; display: none; color: white;font-size: large;">
+    <p>我们翻了个底朝天也没找到您想要的结果</p>
+  </div>
+
+
+
+  <div style="max-width: auto; margin: 5% auto; padding: 15px; line-height: 1.7;">
+    <div id="buttons-container"></div>
+
+
+
+    <script src="./static/buttonsData.js"></script>
+    <script>
+
+      const originalButtonsData = [...buttonsData];
+
+      // 映射level到图片路径的函数
+      function mapLevelToImagePath(level) {
+        if (level.includes("E")) {
+          return "static/images/aqr-rank/E.png";
+        } else if (level.includes("D")) {
+          return "static/images/aqr-rank/D.png";
+        } else if (level.includes("C")) {
+          return "static/images/aqr-rank/C.png";
+        } else if (level.includes("B")) {
+          return "static/images/aqr-rank/B.png";
+        } else if (level.includes("A+")) {
+          return "static/images/aqr-rank/A+.png";
+        } else if (level.includes("A")) {
+          return "static/images/aqr-rank/A.png";
+        } else if (level.includes("S+")) {
+          return "static/images/aqr-rank/S+.png";
+        } else if (level.includes("S")) {
+          return "static/images/aqr-rank/S.png";
+        } else {
+          return "static/images/aqr-rank/default.png";
+        }
+      }
+
+      // 更新buttonsData中的imgSrc_lv字段
+      buttonsData.forEach(item => {
+        const level = item.level.trim();
+        item.imgSrc_lv = mapLevelToImagePath(level);
+      });
+
+      function getColor(level) {
+        if (level.includes("E")) {
+          return "rgb(67,67,67)";
+        } else if (level.includes("D")) {
+          return "rgb(125,125,125)";
+        } else if (level.includes("C")) {
+          return "rgb(143,130,188)";
+        } else if (level.includes("B")) {
+          return "rgb(132,204,201)";
+        } else if (level.includes("A")) {
+          return "rgb(242,155,118)";
+        } else if (level.includes("S")) {
+          return "rgb(50,177,108)";
+        }
+        return "rgb(255,255,255)";  // default color
+      }
+
+
+      // 映射难度到图片路径的函数
+      function mapDifficultiesToImagePath(difficulties) {
+        // 使用 difficulties 变量作为路径的一部分
+        return `static/images/21-rank/${difficulties}.png`;
+      }
+
+      // 更新buttonsData中的imgSrc_df字段
+      buttonsData.forEach(item => {
+        item.imgSrc_df = `static/images/21-rank/${item.difficulties}.png`;
+      });
+
+      // 修改按钮数据中的难度字段
+      buttonsData.forEach(item => {
+        if (item.difficulties.endsWith("+")) {
+          const originalDifficulty = parseFloat(item.difficulties);
+          const newDifficulty = originalDifficulty + 0.05;
+          item.difficulties = newDifficulty.toFixed(2); // 保留两位小数
+        }
+      });
+
+      // 重新渲染按钮
+      renderButtons(buttonsData);
+
+      function renderButtons(buttons) {
+        let container = document.getElementById("buttons-container");
+        container.innerHTML = '';
+        buttons.forEach(buttonData => {
+          // 替换括号及其内容为空字符串
+          const cleanedLevel = buttonData.level.replace(/\（[A-Za-z+]+\）/g, '');
+
+          let a = document.createElement("a");
+          a.href = '#';
+          a.target = "_blank";
+          a.style.textDecoration = "none";
+          let color = getColor(buttonData.level); // 使用清理后的内容获取颜色
+
+          a.innerHTML = `
+          <div class="hover-effect" style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+          ">
+            <div style="display: flex; align-items: center;">
+              <img src="${buttonData.imgSrc_lv}" alt="Cover" width="60" height="60">
+              <img src="${buttonData.imgSrc_df}" alt="Cover" width="40" height="40" style="margin-top: 46px; margin-left: -20px;">
+              <h1 style="font-size:large;color:${color};margin-top: -20px; margin-left: -15px;">
+                ${cleanedLevel} 
+              </h1>
+    
+              <div style="position: absolute; padding-left: 130px;">
+                <h1 style="font-size:large; color: white;"> &ensp;${buttonData.song}</h1>
+                <h1 style="font-size:small; color: gray;"> &ensp;音乐作者: ${buttonData.artist}</h1>
+                <h1 style="font-size:small; color: gray;"> &ensp;关卡作者: ${buttonData.author}</h1>
+                </div>
+            </div>
+            <div style="padding-left: 10px;">
+              <p style="color: ${buttonData.vluation_color};font-size:146"><b>${buttonData.vluation}</b></p>
+            </div>
+          </div>`;
+
+          // 在a元素的点击事件处理程序中打开新窗口并显示相关信息
+          a.addEventListener('click', function (e) {
+            e.preventDefault(); // 防止a元素的默认行为
+
+            console.log(buttonData);
+
+            const newWindow = window.open("", "_blank");
+            if (newWindow) {
+              // 创建新网页的内容
+              newWindow.document.open();
+              newWindow.document.write(`
+    <!DOCTYPE html>
+    <html lang="cn">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Adofai Quality Rating</title>
+    
+      <link rel="stylesheet" type="text/css" href="static/css/font.css">
+      <link rel="stylesheet" type="text/css" href="static/css/select.css">
+      <link rel="stylesheet" type="text/css" href="static/css/newhtml.css">
+    
+    
+      <link rel="icon" href="static/images/AQR-logo.jpg" type="static/image/x-icon">
+    
+    <style>
+      body {
+        background-image: url('static/images/BK.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    </style>
+    </head>
+    
+    <body>
+    
+      <div class="inf-container">
+        <h1 id="song">${buttonData.song}</h1>
+        <div class="aa-box">
+          <h3>歌曲作者:${buttonData.artist}</h3>
+          <h3>关卡作者:${buttonData.author}</h3>
+        </div>
+      </div>
+    
+      <div class="down-container">
+       
+        <iframe src="https://player.bilibili.com/player.html?bvid=${buttonData.video_herf}&p=1&autoplay=0&high_quality=1&danmaku=0 "
+          scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        <div class="lv-display">
+          <div class="ll-box">
+            <div>
+              <p>等级</p>
+              <img src="${buttonData.imgSrc_lv}" alt="Cover" width="40" height="40">
+            </div>
+            <div>
+              <p>难度</p>
+              <img src="${buttonData.imgSrc_df}" alt="Cover" width="40" height="40">
+            </div>
+          </div>
+          <button onclick="window.location.href='${buttonData.href}'" class="button">下载</button>
+        </div>
+      </div>
+    
+    
+    </body>
+    
+    </html>
+            `);
+              newWindow.document.close();
+            } else {
+              alert("无法打开新窗口，请确保浏览器允许弹出窗口。");
+            }
+          });
+
+          container.appendChild(a);
+        });
+      }
+
+
+      // 获取排序按钮元素
+      const sortByLevelAscBtn = document.getElementById("sortByLevelAscBtn");
+      const sortByLevelDescBtn = document.getElementById("sortByLevelDescBtn");
+      const sortByDifficultiesAscBtn = document.getElementById("sortByDifficultiesAscBtn");
+      const sortByDifficultiesDescBtn = document.getElementById("sortByDifficultiesDescBtn");
+      const defaultSort = document.getElementById("defaultSort");
+
+      // 添加事件监听器，点击时触发相应的排序函数
+      sortByLevelAscBtn.addEventListener("click", sortByLevelAsc);
+      sortByLevelDescBtn.addEventListener("click", sortByLevelDesc);
+      sortByDifficultiesAscBtn.addEventListener("click", sortByDifficultiesAsc);
+      sortByDifficultiesDescBtn.addEventListener("click", sortByDifficultiesDesc);
+      defaultSort.addEventListener("click", applyDefaultSort);
+
+      // 定义按等级升序排序函数
+      function sortByLevelAsc() {
+        // 使用 Array.sort() 方法按等级升序排序
+        buttonsData.sort((a, b) => parseFloat(a.level) - parseFloat(b.level));
+
+        // 渲染排序后的按钮列表
+        renderButtons(buttonsData);
+      }
+
+      // 定义按等级降序排序函数
+
+      function sortByLevelDesc() {
+        // 使用 Array.sort() 方法按等级降序排序
+        buttonsData.sort((a, b) => parseFloat(b.level) - parseFloat(a.level));
+
+        // 渲染排序后的按钮列表
+        renderButtons(buttonsData);
+      }
+
+      // 定义按难度升序排序函数
+      function sortByDifficultiesAsc() {
+        // 使用 Array.sort() 方法按难度升序排序，将-2视为最小值，-21视为最大值
+        buttonsData.sort((a, b) => {
+          const difficultyA = parseFloat(a.difficulties);
+          const difficultyB = parseFloat(b.difficulties);
+
+          // 如果 a 或 b 是 -2 或 -21，则将它们映射到一个极端值进行比较
+          if (difficultyA === -2) {
+            return -Infinity;
+          } else if (difficultyB === -2) {
+            return Infinity;
+          } else if (difficultyA === -21) {
+            return Infinity;
+          } else if (difficultyB === -21) {
+            return -Infinity;
+          }
+
+          // 否则，进行正常的数字排序
+          return difficultyA - difficultyB;
+        });
+
+        // 渲染排序后的按钮列表
+        renderButtons(buttonsData);
+      }
+
+      // 定义按难度降序排序函数
+      function sortByDifficultiesDesc() {
+        // 使用 Array.sort() 方法按难度降序排序，将-2视为最小值，-21视为最大值
+        buttonsData.sort((a, b) => {
+          const difficultyA = parseFloat(a.difficulties);
+          const difficultyB = parseFloat(b.difficulties);
+
+          // 如果 a 或 b 是 -2 或 -21，则将它们映射到一个极端值进行比较
+          if (difficultyA === -2) {
+            return -Infinity;
+          } else if (difficultyB === -2) {
+            return Infinity;
+          } else if (difficultyA === -21) {
+            return Infinity;
+          } else if (difficultyB === -21) {
+            return -Infinity;
+          }
+
+          // 否则，进行正常的数字排序
+          return difficultyB - difficultyA;
+        });
+
+        // 渲染排序后的按钮列表
+        renderButtons(buttonsData);
+      }
+
+      function applyDefaultSort() {
+        // 恢复原始的 buttonsData
+        buttonsData = [...originalButtonsData];
+
+        // 这里添加默认排序的逻辑
+        // 例如，按照 buttonsData 数组的顺序来排序
+        renderButtons(buttonsData);
+      }
+      // 获取搜索框元素
+      const searchInput = document.getElementById('search');
+
+      // 获取所有下拉框元素
+      const selectA = document.getElementById("selectA");
+      const selectB = document.getElementById("selectB");
+      const selectDifficultiesA = document.getElementById("selectDifficultiesA");
+      const selectDifficultiesB = document.getElementById("selectDifficultiesB");
+
+
+      // 添加事件监听器，当任何筛选条件更改时触发筛选
+      searchInput.addEventListener('input', filterByLevelAndDifficulties);
+      selectA.addEventListener("change", filterByLevelAndDifficulties);
+      selectB.addEventListener("change", filterByLevelAndDifficulties);
+      selectDifficultiesA.addEventListener("change", filterByLevelAndDifficulties);
+      selectDifficultiesB.addEventListener("change", filterByLevelAndDifficulties);
+      sortByLevelAscBtn.addEventListener("click", filterByLevelAndDifficulties);
+      sortByLevelDescBtn.addEventListener("click", filterByLevelAndDifficulties);
+      sortByDifficultiesAscBtn.addEventListener("click", filterByLevelAndDifficulties);
+      sortByDifficultiesDescBtn.addEventListener("click", filterByLevelAndDifficulties);
+
+      // 筛选函数
+      function filterByLevelAndDifficulties() {
+        // 获取下拉框的选中值并转换成浮点数
+        const levelA = parseFloat(selectA.value);
+        const levelB = parseFloat(selectB.value);
+
+        // 获取难度下拉框的选中值并转换成浮点数
+        const difficultiesA = parseFloat(selectDifficultiesA.value);
+        const difficultiesB = parseFloat(selectDifficultiesB.value);
+
+        // 获取搜索框的值
+        const searchText = searchInput.value.toLowerCase();
+
+        // 进行筛选
+        const filteredButtonsData = buttonsData.filter(button => {
+          const level = parseFloat(button.level.split('（')[0]);
+          const difficulties = parseFloat(button.difficulties);
+          return level >= levelA && level <= levelB && difficulties >= difficultiesA && difficulties <= difficultiesB &&
+            (button.artist.toLowerCase().includes(searchText) ||
+              button.song.toLowerCase().includes(searchText) ||
+              button.author.toLowerCase().includes(searchText));
+        });
+
+        // 渲染筛选结果
+        renderButtons(filteredButtonsData);
+      }
+
+      renderButtons(buttonsData);
+
+
+      // 在筛选函数 filterByLevelAndDifficulties() 中添加以下代码，用于动态调整底部容器位置
+      function filterByLevelAndDifficulties() {
+        // 获取下拉框的选中值并转换成浮点数
+        const levelA = parseFloat(selectA.value);
+        const levelB = parseFloat(selectB.value);
+
+        // 获取难度下拉框的选中值并转换成浮点数
+        const difficultiesA = parseFloat(selectDifficultiesA.value);
+        const difficultiesB = parseFloat(selectDifficultiesB.value);
+
+        // 获取搜索框的值
+        const searchText = searchInput.value.toLowerCase();
+
+        // 进行筛选
+        const filteredButtonsData = buttonsData.filter(button => {
+          const level = parseFloat(button.level.split('（')[0]);
+          const difficulties = parseFloat(button.difficulties);
+          return level >= levelA && level <= levelB && difficulties >= difficultiesA && difficulties <= difficultiesB &&
+            (button.artist.toLowerCase().includes(searchText) ||
+              button.song.toLowerCase().includes(searchText) ||
+              button.author.toLowerCase().includes(searchText));
+        });
+
+        // 渲染筛选结果
+        renderButtons(filteredButtonsData);
+
+
+
+        // 动态调整底部容器位置
+        const qqKookContainer = document.getElementById("qq-kook-container");
+        const noResultsMessage = document.getElementById("noResultsMessage");
+        if (filteredButtonsData.length < 3) {
+          qqKookContainer.style.bottom = "0";
+          qqKookContainer.style.position = "fixed";
+          qqKookContainer.style.width = "100%";
+        } else {
+          qqKookContainer.style.position = "static";
+        }
+        if (filteredButtonsData.length == 0) {
+          noResultsMessage.style.display = "block"; // 显示消息
+        } else {
+          noResultsMessage.style.display = "none"; // 隐藏消息
+        }
+      }
+
+
+
+
+
+
+    </script>
+  </div>
+
+
+  <div id="qq-kook-container"
+    style="align-items: center; background-color: rgba(0, 0, 0, 0.523) ; text-align: center; padding: 20px; color: white;">
+
+    <p>基于 <a href="https://kdocs.cn/l/caxtFMt3ocmi" style="color: rgb(255, 255, 255);" target="_blank">Ado<span
+          style="color: red;">f</span>a<span style="color: rgb(0, 255, 255);">i</span> Quality Rating表格</a> 制作</p>
+
+
+    <p><a href="https://kook.top/EpAH60" style="text-Decoration:none; color:rgb(39, 197, 47)"
+        target="_blank">点击加入KOOK</a>&ensp;|&ensp;QQ：532536665</p>
+
+
+
+    <p>网站由<a href="https://space.bilibili.com/1173527356?" style="text-Decoration:none; color:rgb(179, 223, 255)"
+        target="_blank">水嫩嫩吗</a>制作 &ensp; | &ensp; <a href="https://space.bilibili.com/499696027"
+        style="text-Decoration:none; color:rgb(255, 255, 255)" target="_blank">联系我们</a></p>
+
+    <p>Version 1.2.1&ensp;最后一次更新于2024.2.21</p>
+    <a href="https://beian.miit.gov.cn/?spm=5176.28508143.J_9220772140.60.5421154avnXqY0"
+      style="color:rgba(255,255,255,.5);text-Decoration:none;">黑ICP备2023015444号-1</a>
+  </div>
+
+</body>
+
+</html>
